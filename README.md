@@ -116,10 +116,10 @@ The system is a classroom prototype using synthetic data. Its predictions are no
 
 ## 10. Repository and Submission Information
 
-- Repository URL: **Replace with your actual repository URL**
-- Final commit hash: **Fill in after your final commit**
+- Repository URL: https://github.com/maramyaser/AI_A2_2528164
+- Final commit hash:b74371ed4504c369929cf70624b8f8c6b52cb7ce
 - Operating system tested: Windows
-- Python version tested: **Fill in the version from `python --version`**
+- Python version tested: 3.13.7
 
 ## 11. Known Limitations
 
