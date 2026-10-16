@@ -1,0 +1,77 @@
+{
+    "student_id": "ug2528164@ines.ac.rw",
+    "seed": 8164,
+    "verification_code": "AI-A2-8164",
+    "target": "high_risk",
+    "features": [
+        "rainfall_mm",
+        "avg_temp_c",
+        "soil_moisture_pct",
+        "fertilizer_kg",
+        "field_size_ha",
+        "cooperative_support",
+        "season"
+    ],
+    "rows_after_duplicate_removal": 245,
+    "train_rows": 196,
+    "test_rows": 49,
+    "results": [
+        {
+            "model": "majority_baseline",
+            "accuracy": 0.5102040816326531,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "confusion_matrix": [
+                [
+                    25,
+                    0
+                ],
+                [
+                    24,
+                    0
+                ]
+            ],
+            "roc_auc": 0.5
+        },
+        {
+            "model": "logistic_regression",
+            "accuracy": 0.9795918367346939,
+            "precision": 0.96,
+            "recall": 1.0,
+            "f1": 0.9795918367346939,
+            "confusion_matrix": [
+                [
+                    24,
+                    1
+                ],
+                [
+                    0,
+                    24
+                ]
+            ],
+            "roc_auc": 1.0
+        },
+        {
+            "model": "random_forest",
+            "accuracy": 0.9795918367346939,
+            "precision": 1.0,
+            "recall": 0.9583333333333334,
+            "f1": 0.9787234042553191,
+            "confusion_matrix": [
+                [
+                    25,
+                    0
+                ],
+                [
+                    1,
+                    23
+                ]
+            ],
+            "roc_auc": 1.0
+        }
+    ],
+    "selected_model": "logistic_regression",
+    "selection_reason": "Selected the non-baseline classifier with the highest test-set F1 score among the compared candidates.",
+    "warning": "For a stronger evaluation, model selection should use a validation split or cross-validation, with the test set reserved for final evaluation."
+}

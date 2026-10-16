@@ -1,0 +1,25 @@
+{
+    "seed": 8164,
+    "target": "yield_tons",
+    "training_rows": 196,
+    "testing_rows": 49,
+    "metrics": {
+        "mean_baseline": {
+            "MAE": 2.4911,
+            "RMSE": 2.8925,
+            "R2": -0.0001
+        },
+        "linear_regression": {
+            "MAE": 0.9244,
+            "RMSE": 1.1683,
+            "R2": 0.8369
+        },
+        "random_forest": {
+            "MAE": 1.3312,
+            "RMSE": 1.5848,
+            "R2": 0.6998
+        }
+    },
+    "selected_model": "linear_regression",
+    "selection_reason": "Lowest test RMSE among the two candidate models; the mean baseline is included as a reference."
+}

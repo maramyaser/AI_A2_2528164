@@ -1,0 +1,85 @@
+{
+    "student_id": "ug2528164@ines.ac.rw",
+    "seed": 8164,
+    "verification_code": "AI-A2-8164",
+    "features": [
+        "rainfall_mm",
+        "avg_temp_c",
+        "soil_moisture_pct",
+        "fertilizer_kg",
+        "field_size_ha",
+        "cooperative_support",
+        "season"
+    ],
+    "rows_after_duplicate_removal": 245,
+    "k_comparison": [
+        {
+            "k": 2,
+            "silhouette_score": 0.1571112112625468,
+            "inertia": 1344.7025857277642
+        },
+        {
+            "k": 3,
+            "silhouette_score": 0.13507303721947733,
+            "inertia": 1226.4903696198555
+        },
+        {
+            "k": 4,
+            "silhouette_score": 0.15071183962203502,
+            "inertia": 1107.784515883462
+        },
+        {
+            "k": 5,
+            "silhouette_score": 0.14648336387884714,
+            "inertia": 1029.4370503266664
+        },
+        {
+            "k": 6,
+            "silhouette_score": 0.14888765336455406,
+            "inertia": 959.7362703422299
+        }
+    ],
+    "selected_k": 2,
+    "selection_reason": "Selected the K value with the highest silhouette score among K=2, 3, 4, 5 and 6.",
+    "profiles": [
+        {
+            "cluster": 0,
+            "farm_count": 119,
+            "numeric_feature_means": {
+                "rainfall_mm": 1000.7515714285714,
+                "avg_temp_c": 19.38433949579832,
+                "soil_moisture_pct": 51.03164695652173,
+                "fertilizer_kg": 120.07757652173912,
+                "field_size_ha": 2.090738655462185,
+                "cooperative_support": 1.0
+            },
+            "season_counts": {
+                "A": 67,
+                "B": 52
+            },
+            "interpretation": "Compare this cluster's average rainfall, temperature, soil moisture, fertilizer, field size and support with the other clusters to describe its farm conditions."
+        },
+        {
+            "cluster": 1,
+            "farm_count": 126,
+            "numeric_feature_means": {
+                "rainfall_mm": 980.5324936507936,
+                "avg_temp_c": 19.158138095238094,
+                "soil_moisture_pct": 50.64487203389832,
+                "fertilizer_kg": 123.2452593220339,
+                "field_size_ha": 2.1553730158730158,
+                "cooperative_support": 0.0
+            },
+            "season_counts": {
+                "B": 70,
+                "A": 56
+            },
+            "interpretation": "Compare this cluster's average rainfall, temperature, soil moisture, fertilizer, field size and support with the other clusters to describe its farm conditions."
+        }
+    ],
+    "limitations": [
+        "The dataset is synthetic and may not reflect real farms.",
+        "Silhouette score measures separation in the encoded and scaled feature space, not agricultural value.",
+        "Cluster labels are arbitrary identifiers, not risk ratings."
+    ]
+}
