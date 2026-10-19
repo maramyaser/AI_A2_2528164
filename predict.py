@@ -57,12 +57,13 @@ def load_record(json_path):
         if not np.isfinite(value):
             raise ValueError(f"{feature} must be finite.")
 
+    
     ranges = {
-        "rainfall_mm": (0, 500),
-        "avg_temp_c": (-5, 45),
-        "soil_moisture_pct": (0, 100),
-        "fertilizer_kg": (0, 500),
-        "field_size_ha": (0.01, 100),
+        "rainfall_mm": (600, 1400),
+        "avg_temp_c": (12, 26),
+        "soil_moisture_pct": (20, 80),
+        "fertilizer_kg": (0, 250),
+        "field_size_ha": (0.2, 4),
         "cooperative_support": (0, 1),
     }
 
